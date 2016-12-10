@@ -591,3 +591,8 @@ a:visited, a:hover{
     color: aliceblue;
     font-style: none;
 }
+
+tr:hover{
+    color: crimson;
+}
+

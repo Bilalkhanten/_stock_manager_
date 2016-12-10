@@ -72,7 +72,6 @@
 
         exit();
 
-    //TODO update the procedures and add queries here
     }
     else{
         //go to login form

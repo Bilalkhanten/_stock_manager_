@@ -401,9 +401,9 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
 
 setInterval(updateGradient,10);
 
-
-
-
+document.getElementById("menu-link-6").onclick = function () {
+    location.href = "../logout.php";
+};
 
 $(document).ready(function(){
         var i = 1;
@@ -571,3 +571,18 @@ $(document).ready(function(){
     document.getElementById("menu-link-6").onclick = function () {
         location.href = "../logout.php";
     };
+
+$(document).ready(function(){
+    $(".ret_item").click(function () {
+            var id = $(this).attr('id');
+            console.log(id);
+            var id1 = parseInt(id[id.length-1],10);
+
+            $("#idx").val(id1);
+
+            console.log($("#idx").val());
+            console.log(id1);
+            document.getElementById('ret_form').submit();
+    });
+
+});

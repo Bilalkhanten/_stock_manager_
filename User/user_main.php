@@ -2,13 +2,13 @@
 	session_start();
 	if($_SESSION['USER_ID']=='admin'){
 		//go to login form
-        header('location:../Login/Login/login_form.php');
+        header('location:../Login/login_form.php');
         exit();
 	}
 	
 	if(!($_SESSION[ 'IS_AUTHENTICATED' ] && $_SESSION[ 'IS_AUTHENTICATED' ] == 1)){
 		//go to login form
-        header('location:../Login/Login/login_form.php');
+        header('location:../Login/login_form.php');
         exit();
 	}
 ?>
@@ -23,17 +23,17 @@
 	<meta name="keywords" content="themes, bootstrap, free, templates, bootstrap 3, freebie,">
 	<meta property="og:title" content="">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../includes/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../includes/fancybox/jquery.fancybox-v=2.1.5.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../includes/css/font-awesome.min.css" rel="stylesheet">
 	
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="stylesheet" type="text/css" href="../includes/css/style.css">	
 	
 	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	
 	
-	<link rel="prefetch" href="images/zoom.png">
-    <script src="../jquery.min.js"></script>
+	<link rel="prefetch" href="../includes/images/zoom.png">
+    <script src="../includes/js/jquery.min.js"></script>
 	
     <script type="text/javascript">
         var link;
@@ -288,7 +288,7 @@
 	<div class="slide story" id="slide-3" data-slide="3">
 		<div class="row">
 			<div class="col-12 col-sm-6 col-lg-2" hidden>
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p12-large.jpg"><img src="images/portfolio/p12-small.jpg" alt=""></a>
+                <a data-fancybox-group="portfolio" class="fancybox" href="../includes/images/portfolio/p12-large.jpg"><img src="../includes/images/portfolio/p12-small.jpg" alt=""></a>
             </div>
 		</div><!-- /row -->
 	</div><!-- /slide3 -->
@@ -970,13 +970,13 @@
 </body>
 
 	<!-- SCRIPTS -->
-	<script src="js/html5shiv.js"></script>
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
-	<script src="js/script.js"></script>
+	<script src="../includes/js/html5shiv.js"></script>
+	<script src="../includes/js/jquery-1.10.2.min.js"></script>
+	<script src="../includes/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="../includes/js/bootstrap.min.js"></script>
+	<script src="../includes/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../includes/fancybox/jquery.fancybox.pack-v=2.1.5.js"></script>
+	<script src="../includes/js/script.js"></script>
 	
 
 </html>

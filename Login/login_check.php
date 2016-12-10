@@ -11,7 +11,7 @@
 			$_SESSION[ 'IS_AUTHENTICATED' ] = 1;
 			$_SESSION[ 'USER_ID' ] = 'admin';
 			
-			header("location:../../Admin/admin_main.php");
+			header("location:../Admin/admin_main.php");
 		}
 		else{
 			include('login_form.php');
@@ -45,7 +45,7 @@
 				session_start();
 				$_SESSION[ 'IS_AUTHENTICATED' ] = 1;
 				$_SESSION[ 'USER_ID' ] = $username;
-				header('location:../../User/user_main.php' );
+				header('location:../User/user_main.php' );
 			}
 			else{
 				//Login failed

@@ -5,6 +5,6 @@
  session_destroy();
  
  //Redirect to login page
- header("location:Login/Login/login_form.php");
+ header("location:Login/login_form.php");
  exit();
 ?>
