@@ -22,7 +22,7 @@
 	//your code here
 		if($username && $password){
 			//Connect to mysql server
-			include ("../../dbcontroller.php");
+			include ("../dbcontroller.php");
 			$qry="SELECT * FROM logins WHERE BORROWER_ID = '$username' AND PASSWORD = '$password'";
 			//echo $qry;
 			//Execute query
